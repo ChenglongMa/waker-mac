@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E0163D72BCF2C56007C264C /* CheckForUpdatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0163D62BCF2C56007C264C /* CheckForUpdatesViewModel.swift */; };
+		6E0163DA2BCF3CDE007C264C /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 6E0163D92BCF3CDE007C264C /* Sparkle */; };
+		6E16AF9F2BC7FD0E006E913A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16AF9E2BC7FD0E006E913A /* Utils.swift */; };
+		6E1B96422BC780A100D417EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B96412BC780A100D417EA /* AppDelegate.swift */; };
+		6E1B96442BC7830600D417EA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6E1B96432BC7830600D417EA /* Localizable.xcstrings */; };
+		6E1B96472BC7867D00D417EA /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 6E1B96462BC7867D00D417EA /* LaunchAtLogin */; };
+		6E41796E2BC75EDE00547152 /* WakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E41796D2BC75EDE00547152 /* WakerApp.swift */; };
+		6E4179722BC75EDF00547152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4179712BC75EDF00547152 /* Assets.xcassets */; };
+		6E4179752BC75EDF00547152 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4179742BC75EDF00547152 /* Preview Assets.xcassets */; };
+		6E41797F2BC76D3F00547152 /* WakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E41797E2BC76D3F00547152 /* WakerViewModel.swift */; };
+		6EC7EBD22BCC869C002793B3 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7EBD12BCC869C002793B3 /* MenuBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E0163D62BCF2C56007C264C /* CheckForUpdatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForUpdatesViewModel.swift; sourceTree = "<group>"; };
+		6E16AF9E2BC7FD0E006E913A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6E1B96412BC780A100D417EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E1B96432BC7830600D417EA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6E41796A2BC75EDE00547152 /* Waker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E41796D2BC75EDE00547152 /* WakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakerApp.swift; sourceTree = "<group>"; };
+		6E4179712BC75EDF00547152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E4179742BC75EDF00547152 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E4179762BC75EDF00547152 /* Waker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Waker.entitlements; sourceTree = "<group>"; };
+		6E41797E2BC76D3F00547152 /* WakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakerViewModel.swift; sourceTree = "<group>"; };
+		6EC7EBD12BCC869C002793B3 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E4179672BC75EDE00547152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0163DA2BCF3CDE007C264C /* Sparkle in Frameworks */,
+				6E1B96472BC7867D00D417EA /* LaunchAtLogin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E4179612BC75EDE00547152 = {
+			isa = PBXGroup;
+			children = (
+				6E1B96432BC7830600D417EA /* Localizable.xcstrings */,
+				6E41796C2BC75EDE00547152 /* Waker */,
+				6E41796B2BC75EDE00547152 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E41796B2BC75EDE00547152 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E41796A2BC75EDE00547152 /* Waker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E41796C2BC75EDE00547152 /* Waker */ = {
+			isa = PBXGroup;
+			children = (
+				6E41796D2BC75EDE00547152 /* WakerApp.swift */,
+				6EC7EBD12BCC869C002793B3 /* MenuBar.swift */,
+				6E41797E2BC76D3F00547152 /* WakerViewModel.swift */,
+				6E0163D62BCF2C56007C264C /* CheckForUpdatesViewModel.swift */,
+				6E1B96412BC780A100D417EA /* AppDelegate.swift */,
+				6E16AF9E2BC7FD0E006E913A /* Utils.swift */,
+				6E4179712BC75EDF00547152 /* Assets.xcassets */,
+				6E4179762BC75EDF00547152 /* Waker.entitlements */,
+				6E4179732BC75EDF00547152 /* Preview Content */,
+			);
+			path = Waker;
+			sourceTree = "<group>";
+		};
+		6E4179732BC75EDF00547152 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6E4179742BC75EDF00547152 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E4179692BC75EDE00547152 /* Waker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E4179792BC75EDF00547152 /* Build configuration list for PBXNativeTarget "Waker" */;
+			buildPhases = (
+				6E4179662BC75EDE00547152 /* Sources */,
+				6E4179672BC75EDE00547152 /* Frameworks */,
+				6E4179682BC75EDE00547152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Waker;
+			packageProductDependencies = (
+				6E1B96462BC7867D00D417EA /* LaunchAtLogin */,
+				6E0163D92BCF3CDE007C264C /* Sparkle */,
+			);
+			productName = Waker;
+			productReference = 6E41796A2BC75EDE00547152 /* Waker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E4179622BC75EDE00547152 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					6E4179692BC75EDE00547152 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 6E4179652BC75EDE00547152 /* Build configuration list for PBXProject "Waker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 6E4179612BC75EDE00547152;
+			packageReferences = (
+				6E1B96452BC7867D00D417EA /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+				6E0163D82BCF3CDE007C264C /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			productRefGroup = 6E41796B2BC75EDE00547152 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E4179692BC75EDE00547152 /* Waker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E4179682BC75EDE00547152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4179752BC75EDF00547152 /* Preview Assets.xcassets in Resources */,
+				6E4179722BC75EDF00547152 /* Assets.xcassets in Resources */,
+				6E1B96442BC7830600D417EA /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E4179662BC75EDE00547152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1B96422BC780A100D417EA /* AppDelegate.swift in Sources */,
+				6E0163D72BCF2C56007C264C /* CheckForUpdatesViewModel.swift in Sources */,
+				6E41797F2BC76D3F00547152 /* WakerViewModel.swift in Sources */,
+				6EC7EBD22BCC869C002793B3 /* MenuBar.swift in Sources */,
+				6E41796E2BC75EDE00547152 /* WakerApp.swift in Sources */,
+				6E16AF9F2BC7FD0E006E913A /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6E4179772BC75EDF00547152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E4179782BC75EDF00547152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6E41797A2BC75EDF00547152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Waker/Waker.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Waker/Preview Content\"";
+				DEVELOPMENT_TEAM = CNYDYKNJDR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Waker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenglongma.Waker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6E41797B2BC75EDF00547152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Waker/Waker.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Waker/Preview Content\"";
+				DEVELOPMENT_TEAM = CNYDYKNJDR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Waker;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenglongma.Waker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E4179652BC75EDE00547152 /* Build configuration list for PBXProject "Waker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4179772BC75EDF00547152 /* Debug */,
+				6E4179782BC75EDF00547152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E4179792BC75EDF00547152 /* Build configuration list for PBXNativeTarget "Waker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E41797A2BC75EDF00547152 /* Debug */,
+				6E41797B2BC75EDF00547152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E0163D82BCF3CDE007C264C /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+		6E1B96452BC7867D00D417EA /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E0163D92BCF3CDE007C264C /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E0163D82BCF3CDE007C264C /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		6E1B96462BC7867D00D417EA /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E1B96452BC7867D00D417EA /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6E4179622BC75EDE00547152 /* Project object */;
+}
