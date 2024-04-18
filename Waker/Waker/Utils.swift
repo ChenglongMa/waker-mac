@@ -15,7 +15,8 @@ enum RunningStatus {
 }
 
 struct Constants {
-    static let allWeekDays = 0b1_111_111
+    static let ALL_WEEKDAYS = 0b1_111_111
+    static let UPDATE_NOTIFICATION_IDENTIFIER = "UpdateCheck"
 }
 
 class Utils {
@@ -135,4 +136,14 @@ extension DateFormatter {
         formatter.timeStyle = .short
         return formatter
     }
+}
+
+extension Bundle {
+    var buildNumber: String {
+        return infoDictionary?["CFBundleVersion"] as! String
+    }
+}
+
+extension Notification.Name {
+    static let updateNotification = Notification.Name(Constants.UPDATE_NOTIFICATION_IDENTIFIER)
 }

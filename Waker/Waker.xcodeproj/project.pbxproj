@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E0163D72BCF2C56007C264C /* CheckForUpdatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0163D62BCF2C56007C264C /* CheckForUpdatesViewModel.swift */; };
+		6E0163D72BCF2C56007C264C /* CheckForUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0163D62BCF2C56007C264C /* CheckForUpdatesView.swift */; };
 		6E0163DA2BCF3CDE007C264C /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 6E0163D92BCF3CDE007C264C /* Sparkle */; };
 		6E16AF9F2BC7FD0E006E913A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16AF9E2BC7FD0E006E913A /* Utils.swift */; };
 		6E1B96422BC780A100D417EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B96412BC780A100D417EA /* AppDelegate.swift */; };
@@ -21,7 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E0163D62BCF2C56007C264C /* CheckForUpdatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForUpdatesViewModel.swift; sourceTree = "<group>"; };
+		6E0163D62BCF2C56007C264C /* CheckForUpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForUpdatesView.swift; sourceTree = "<group>"; };
+		6E0163DB2BCF4E36007C264C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6E16AF9E2BC7FD0E006E913A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		6E1B96412BC780A100D417EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E1B96432BC7830600D417EA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -67,10 +68,11 @@
 		6E41796C2BC75EDE00547152 /* Waker */ = {
 			isa = PBXGroup;
 			children = (
+				6E0163DB2BCF4E36007C264C /* Info.plist */,
 				6E41796D2BC75EDE00547152 /* WakerApp.swift */,
 				6EC7EBD12BCC869C002793B3 /* MenuBar.swift */,
 				6E41797E2BC76D3F00547152 /* WakerViewModel.swift */,
-				6E0163D62BCF2C56007C264C /* CheckForUpdatesViewModel.swift */,
+				6E0163D62BCF2C56007C264C /* CheckForUpdatesView.swift */,
 				6E1B96412BC780A100D417EA /* AppDelegate.swift */,
 				6E16AF9E2BC7FD0E006E913A /* Utils.swift */,
 				6E4179712BC75EDF00547152 /* Assets.xcassets */,
@@ -169,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E1B96422BC780A100D417EA /* AppDelegate.swift in Sources */,
-				6E0163D72BCF2C56007C264C /* CheckForUpdatesViewModel.swift in Sources */,
+				6E0163D72BCF2C56007C264C /* CheckForUpdatesView.swift in Sources */,
 				6E41797F2BC76D3F00547152 /* WakerViewModel.swift in Sources */,
 				6EC7EBD22BCC869C002793B3 /* MenuBar.swift in Sources */,
 				6E41796E2BC75EDE00547152 /* WakerApp.swift in Sources */,
@@ -305,26 +307,32 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Waker/Waker.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development: ichenglongma@icloud.com (6725BGVYMG)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development: ichenglongma@icloud.com (6725BGVYMG)";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0.9;
 				DEVELOPMENT_ASSET_PATHS = "\"Waker/Preview Content\"";
-				DEVELOPMENT_TEAM = CNYDYKNJDR;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Waker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Waker;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Chenglong Ma. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chenglongma.Waker;
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenglongma.waker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -337,26 +345,32 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Waker/Waker.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development: ichenglongma@icloud.com (6725BGVYMG)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development: ichenglongma@icloud.com (6725BGVYMG)";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0.9;
 				DEVELOPMENT_ASSET_PATHS = "\"Waker/Preview Content\"";
-				DEVELOPMENT_TEAM = CNYDYKNJDR;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Waker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Waker;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Chenglong Ma. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chenglongma.Waker;
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chenglongma.waker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

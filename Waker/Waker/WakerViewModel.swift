@@ -15,7 +15,7 @@ class WakerViewModel: ObservableObject {
     @AppStorage("startTime") private var startTimeStr: String = "09:00"
     @AppStorage("endTime") private var endTimeStr: String = "17:00"
     @AppStorage("allDay") var allDay: Bool = false
-    @AppStorage("scheduledDays") var selectedDays: Int = Constants.allWeekDays
+    @AppStorage("scheduledDays") var selectedDays: Int = Constants.ALL_WEEKDAYS
 
     var startTime: Date {
         get { startTimeStr.toTime() }
@@ -30,7 +30,6 @@ class WakerViewModel: ObservableObject {
     private var timer: Timer?
 
     private var awake: Bool = false
-//    @Published var isRunning: Bool = false
     @Published var runningStatus: RunningStatus = RunningStatus.running
     
     init() {
@@ -54,7 +53,7 @@ class WakerViewModel: ObservableObject {
         let weekdayIndex = Calendar.current.component(.weekday, from: Date.now) - 1
         let todaySelected = !scheduled || self.selectedDays & (1 << weekdayIndex) != 0
         let nowInRange = !scheduled || self.allDay || (Date.now.afterOrSame(self.startTime) && Date.now.beforeOrSame(self.endTime))
-        print("Current status: isOn: \(isOn), todaySelected: \(todaySelected), nowInRange: \(nowInRange), \(startTime.toString()), \(endTime.toString())")
+//        print("Current status: isOn: \(isOn), todaySelected: \(todaySelected), nowInRange: \(nowInRange), \(startTime.toString()), \(endTime.toString())")
         let isRunning = self.isOn && todaySelected && nowInRange
         
         if isRunning {

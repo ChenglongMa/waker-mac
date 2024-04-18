@@ -11,7 +11,18 @@
         }
       }
     },
+    "Check for Updates" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "检查更新"
+          }
+        }
+      }
+    },
     "Check for Updates…" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -42,10 +53,8 @@
         }
       }
     },
-    "Favorites" : {
-
-    },
     "Feedback" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -184,9 +193,6 @@
         }
       }
     },
-    "Start Timer" : {
-
-    },
     "Stop" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -198,12 +204,6 @@
         }
       }
     },
-    "Stop Timer" : {
-
-    },
-    "Timer is %@" : {
-
-    },
     "to" : {
       "localizations" : {
         "zh-Hans" : {
@@ -213,9 +213,6 @@
           }
         }
       }
-    },
-    "Toggle Text" : {
-
     },
     "Wake Up Interval" : {
       "localizations" : {

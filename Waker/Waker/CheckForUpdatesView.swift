@@ -9,9 +9,10 @@
 import SwiftUI
 import Sparkle
 
-class CheckForUpdatesViewModel: ObservableObject {
+// This view model class publishes when new updates can be checked by the user
+final class CheckForUpdatesViewModel: ObservableObject {
     @Published var canCheckForUpdates = false
-    
+
     init(updater: SPUUpdater) {
         updater.publisher(for: \.canCheckForUpdates)
             .assign(to: &$canCheckForUpdates)
@@ -34,7 +35,7 @@ struct CheckForUpdatesView: View {
     
     var body: some View {
         Button("Check for Updates", action: updater.checkForUpdates)
-            .buttonStyle(PlainButtonStyle())
+            .buttonStyle(.link)
             .disabled(!checkForUpdatesViewModel.canCheckForUpdates)
     }
 }

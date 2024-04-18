@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSApplicationActivationPolicy</key>
+	<string>NSApplicationActivationPolicyAccessory</string>
+	<key>SUEnableDownloaderService</key>
+	<true/>
+	<key>SUEnableInstallerLauncherService</key>
+	<true/>
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/ChenglongMa/waker-mac/main/Waker/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>haVE7DJh3aA5vlw6ycN+Ss0MP+CrGFEcbxLV1+Ovkaw=</string>
+</dict>
+</plist>

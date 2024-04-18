@@ -8,10 +8,11 @@
 import SwiftUI
 import LaunchAtLogin
 import Sparkle
+import UserNotifications
 
 struct MenuBar: View {
     
-    @ObservedObject var viewModel: WakerViewModel
+    @EnvironmentObject var viewModel: WakerViewModel
     @Binding var appName: String
     @Binding var appIcon: String
     
@@ -29,12 +30,12 @@ struct MenuBar: View {
     
     @State private var selectedSymbolIndex = 0
     @State private var customSymbolName = ""
-    @State var observer: NSKeyValueObservation?
-    
+    @State private var observer: NSKeyValueObservation?
     
     private let weekdays: [String] = Calendar.current.shortStandaloneWeekdaySymbols
     @State private var firstWeekdayIndex = Calendar.current.firstWeekday - 1
     
+    let updaterController: SPUStandardUpdaterController
     
     private let formatter: NumberFormatter = {
         let formatter = NumberFormatter()
@@ -47,9 +48,6 @@ struct MenuBar: View {
     private let backgroundColor: Color = Color(NSColor.windowBackgroundColor)
     
     
-    // If you want to start the updater manually, pass false to startingUpdater and call .startUpdater() later
-    // This is where you can also pass an updater delegate if you need one
-    private let updaterController: SPUStandardUpdaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
     
     var body: some View {
         
@@ -110,9 +108,9 @@ struct MenuBar: View {
             
             Divider()
             HStack {
-                Link("GitHub", destination: URL(string: "https://github.com/ChenglongMa/waker")!)
-                Divider().frame(width: 1)
-                Link("Feedback", destination: URL(string: "https://github.com/ChenglongMa/waker/issues")!)
+                Link("GitHub", destination: URL(string: "https://github.com/ChenglongMa/waker-mac")!)
+                //                Divider().frame(width: 1)
+                //                Link("Feedback", destination: URL(string: "https://github.com/ChenglongMa/waker/issues")!)
                 Divider().frame(width: 1)
                 CheckForUpdatesView(updater: updaterController.updater)
                 Divider().frame(width: 1)
@@ -121,7 +119,7 @@ struct MenuBar: View {
                     NSApplication.shared.terminate(nil)
                 }
                 .keyboardShortcut("q")
-                .buttonStyle(PlainButtonStyle())
+                .buttonStyle(.link)
             }.padding()
         }
         .padding(.vertical)
@@ -138,6 +136,8 @@ struct MenuBar: View {
         }
         .onAppear{
             print("appear")
+            updaterController.startUpdater()
+            //            self.updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: self.updaterDelegate, userDriverDelegate: nil)
             observer = NSApplication.shared.observe(\.keyWindow) { x, y in
                 let isVisible = NSApplication.shared.keyWindow != nil
                 print("Is visible: \(isVisible)")
@@ -161,7 +161,7 @@ struct MenuBar: View {
             Toggle(isOn: Binding<Bool>(
                 get: { everyday },
                 set: { selectAll in
-                    selectedDays = selectAll ? Constants.allWeekDays : 0
+                    selectedDays = selectAll ? Constants.ALL_WEEKDAYS : 0
                     everyday = selectAll
                 }
             )){
@@ -216,7 +216,7 @@ struct MenuBar: View {
             set: { newValue in
                 if newValue {
                     self.selectedDays |= (1 << day)
-                    self.everyday = self.selectedDays == Constants.allWeekDays
+                    self.everyday = self.selectedDays == Constants.ALL_WEEKDAYS
                 } else {
                     self.selectedDays &= ~(1 << day)
                     self.everyday = false
@@ -238,7 +238,6 @@ struct MenuBar: View {
                 selectedWeekdays.append(i)
             }
         }
-        
         return selectedWeekdays
     }
 }
@@ -261,9 +260,7 @@ struct CustomToggleStyle: ToggleStyle {
 }
 
 #Preview {
-    MenuBar(viewModel: WakerViewModel(),
-            appName: Binding.constant("Waker - active"),
-            appIcon: Binding.constant("sun.max.fill")
-    )
-    .frame(width: 500)
+    MenuBar(appName: Binding.constant("Waker - active"),appIcon: Binding.constant("sun.max.fill"), updaterController: SPUStandardUpdaterController(startingUpdater: false, updaterDelegate: nil, userDriverDelegate: nil))
+        .environmentObject(WakerViewModel())
+        .frame(width: 500)
 }
