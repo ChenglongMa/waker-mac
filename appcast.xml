@@ -4,11 +4,11 @@
         <title>Waker</title>
         <item>
             <title>0.9</title>
-            <pubDate>Thu, 18 Apr 2024 15:43:37 +1000</pubDate>
+            <pubDate>Thu, 18 Apr 2024 16:13:22 +1000</pubDate>
             <sparkle:version>0.9</sparkle:version>
             <sparkle:shortVersionString>0.9</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://raw.githubusercontent.com/ChenglongMa/waker-mac/main/Waker/Waker.dmg" length="1077318" type="application/octet-stream" sparkle:edSignature="qrJNnvSrgHRVL3l35cbujDB76w60dcE2KjHWqN3Xweu96WdKNtw7fz4BoOdUEq6iGC6Twyv2z6JxZD/qU05fDg=="/>
+            <enclosure url="https://github.com/ChenglongMa/waker-mac/releases/latest/download/Waker.dmg" length="1078348" type="application/octet-stream" sparkle:edSignature="A/rC87odRN6yaG3gdbrajNgAkXfNcm9vKdTYXq5eZa5GJLR+kVL7esK3hzl5nwbhbdYXLCpv0nY+AA9NeoCcDQ=="/>
         </item>
     </channel>
 </rss>

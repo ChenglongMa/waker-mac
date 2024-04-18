@@ -9,7 +9,7 @@
 	<key>SUEnableInstallerLauncherService</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/ChenglongMa/waker-mac/main/Waker/appcast.xml</string>
+	<string>https://raw.githubusercontent.com/ChenglongMa/waker-mac/main/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>haVE7DJh3aA5vlw6ycN+Ss0MP+CrGFEcbxLV1+Ovkaw=</string>
 </dict>
