@@ -3,12 +3,12 @@
     <channel>
         <title>Waker</title>
         <item>
-            <title>0.9</title>
-            <pubDate>Thu, 18 Apr 2024 16:13:22 +1000</pubDate>
-            <sparkle:version>0.9</sparkle:version>
-            <sparkle:shortVersionString>0.9</sparkle:shortVersionString>
+            <title>1.0</title>
+            <pubDate>Thu, 18 Apr 2024 17:05:45 +1000</pubDate>
+            <sparkle:version>1.0</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ChenglongMa/waker-mac/releases/latest/download/Waker.dmg" length="1078348" type="application/octet-stream" sparkle:edSignature="A/rC87odRN6yaG3gdbrajNgAkXfNcm9vKdTYXq5eZa5GJLR+kVL7esK3hzl5nwbhbdYXLCpv0nY+AA9NeoCcDQ=="/>
+            <enclosure url="https://github.com/ChenglongMa/waker-mac/releases/latest/download/Waker.dmg" length="1075519" type="application/octet-stream" sparkle:edSignature="bbbFodjspKOUr1AsFnHRxfK5wxigYGmNc1ihhCIZShB+FfCZtbTbObNYJl7lIRlusQZiTvwvdd8fIpXlMX9jBg=="/>
         </item>
     </channel>
 </rss>

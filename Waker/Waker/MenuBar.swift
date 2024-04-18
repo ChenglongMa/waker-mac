@@ -19,7 +19,7 @@ struct MenuBar: View {
     @State private var isOn: Bool = true
     @AppStorage("lanunchAtLogin") private var launchAtLogin: Bool = false
     @State private var everyday: Bool = true
-    @State var selectedDays: Int = 0
+    @State private var selectedDays: Int = 0
     
     @State private var wakeUpInterval: Double = 5.0
     @State private var scheduled: Bool = false
@@ -46,8 +46,6 @@ struct MenuBar: View {
     }()
     
     private let backgroundColor: Color = Color(NSColor.windowBackgroundColor)
-    
-    
     
     var body: some View {
         
@@ -137,7 +135,6 @@ struct MenuBar: View {
         .onAppear{
             print("appear")
             updaterController.startUpdater()
-            //            self.updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: self.updaterDelegate, userDriverDelegate: nil)
             observer = NSApplication.shared.observe(\.keyWindow) { x, y in
                 let isVisible = NSApplication.shared.keyWindow != nil
                 print("Is visible: \(isVisible)")
@@ -150,6 +147,7 @@ struct MenuBar: View {
                     scheduled = viewModel.scheduled
                     allDay = viewModel.allDay
                     isOn = viewModel.isOn
+                    everyday = selectedDays == Constants.ALL_WEEKDAYS
                     self.firstWeekdayIndex = Calendar.current.firstWeekday - 1
                 }
             }

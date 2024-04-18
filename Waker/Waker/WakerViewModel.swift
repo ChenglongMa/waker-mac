@@ -9,28 +9,66 @@ import SwiftUI
 
 class WakerViewModel: ObservableObject {
 
-    @AppStorage("isOn") var isOn = true
-    @AppStorage("wakeUpInterval") var wakeUpInterval: Double = 5.0 //* 60 // unit: seconds
-    @AppStorage("scheduled") var scheduled: Bool = false
+    @AppStorage("isOn") private var _isOn = true
+    @AppStorage("wakeUpInterval") var wakeUpInterval: Double = 5.0 // unit: minutes!
+    @AppStorage("scheduled") private var _scheduled: Bool = false
     @AppStorage("startTime") private var startTimeStr: String = "09:00"
     @AppStorage("endTime") private var endTimeStr: String = "17:00"
-    @AppStorage("allDay") var allDay: Bool = false
-    @AppStorage("scheduledDays") var selectedDays: Int = Constants.ALL_WEEKDAYS
+    @AppStorage("allDay") private var _allDay: Bool = false
+    @AppStorage("scheduledDays") private var _selectedDays: Int = Constants.ALL_WEEKDAYS
 
     var startTime: Date {
         get { startTimeStr.toTime() }
-        set { startTimeStr = newValue.toString() }
+        set {
+            startTimeStr = newValue.toString()
+            _ = self.isStarting()
+        }
     }
     var endTime: Date {
         get { endTimeStr.toTime() }
-        set { endTimeStr = newValue.toString() }
+        set {
+            endTimeStr = newValue.toString()
+            _ = self.isStarting()
+        }
+    }
+    
+    var isOn: Bool {
+        get { _isOn }
+        set {
+            _isOn = newValue
+            _ = self.isStarting()
+        }
+    }
+    
+    var scheduled: Bool {
+        get { _scheduled }
+        set {
+            _scheduled = newValue
+            _ = self.isStarting()
+        }
+    }
+    
+    var allDay: Bool {
+        get { _allDay }
+        set {
+            _allDay = newValue
+            _ = self.isStarting()
+        }
+    }
+    
+    var selectedDays: Int {
+        get { _selectedDays }
+        set {
+            _selectedDays = newValue
+            _ = self.isStarting()
+        }
     }
 
-    private let checkInterval: TimeInterval = 2 //* 60 // unit: seconds
+    private let checkInterval: TimeInterval = 1 * 60 // unit: seconds
     private var timer: Timer?
 
     private var awake: Bool = false
-    @Published var runningStatus: RunningStatus = RunningStatus.running
+    @Published var runningStatus: RunningStatus = .running
     
     init() {
         start()
@@ -57,13 +95,13 @@ class WakerViewModel: ObservableObject {
         let isRunning = self.isOn && todaySelected && nowInRange
         
         if isRunning {
-            self.runningStatus = RunningStatus.running
+            self.runningStatus = .running
         } else if !self.isOn {
-            self.runningStatus = RunningStatus.stopped
+            self.runningStatus = .stopped
         } else if scheduled {
-            self.runningStatus = RunningStatus.scheduled
+            self.runningStatus = self.selectedDays == 0 ? .stopped : .scheduled
         } else {
-            self.runningStatus = RunningStatus.error
+            self.runningStatus = .error
         }
         
         return isRunning

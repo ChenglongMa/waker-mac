@@ -13,7 +13,7 @@ import Sparkle
 @main
 struct WakerApp: App {
     
-    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+//    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     
     @AppStorage("appIcon") private var appIcon = "sun.max.fill"
     @AppStorage("appName") private var appName = "Waker - active"
@@ -26,6 +26,8 @@ struct WakerApp: App {
 
     
     init() {
+        Utils.checkAccessibilityPermission()
+
         // If you want to start the updater manually, pass false to startingUpdater and call .startUpdater() later
         // This is where you can also pass an updater delegate if you need one
         self.updaterController = SPUStandardUpdaterController(startingUpdater: false, updaterDelegate: self.updaterDelegate, userDriverDelegate: self.updaterDelegate)

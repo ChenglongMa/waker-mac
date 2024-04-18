@@ -11,18 +11,18 @@ import Sparkle
 import UserNotifications
 import SwiftUI
 
-class AppDelegate: NSObject, NSApplicationDelegate {
-    
-    func applicationWillFinishLaunching(_ notification: Notification) {
-        Utils.checkAccessibilityPermission()
-    }
+//class AppDelegate: NSObject, NSApplicationDelegate {
+//    
+//    func applicationWillFinishLaunching(_ notification: Notification) {
+//        Utils.checkAccessibilityPermission()
+//    }
     
 //    func applicationDidFinishLaunching(_ notification: Notification) {
 //        // Make the app run in the background
 //        NSApp.setActivationPolicy(.accessory)
 //        UNUserNotificationCenter.current().delegate = self
 //    }
-}
+//}
 
 class UpdaterDelegate: NSObject, UNUserNotificationCenterDelegate, SPUUpdaterDelegate, SPUStandardUserDriverDelegate {
     
