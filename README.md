@@ -8,123 +8,114 @@
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ChenglongMa/waker-mac?include_prereleases)](https://github.com/ChenglongMa/waker-mac/releases/latest)
 [![GitHub License](https://img.shields.io/github/license/ChenglongMa/waker-mac)](https://github.com/ChenglongMa/waker-mac/blob/main/LICENSE)
 
+> "_You deserve a cup of coffee!_" - Waker <img src="./docs/icon.svg" alt="Waker icon" width="50px">
 
-> "_You deserve a cup of coffee!_" - Waker  <img src="./docs/icon.svg" alt="Waker icon" width="50px">
-
-A simple macOS menu bar app that helps you to keep your Mac awake and prevent "_You know what_" apps from becoming "**inactive**".
+Waker is a straightforward macOS menu bar app designed to keep your Mac awake and prevent "_You know what_" apps from
+becoming inactive.
 
 # Appearance
+
 ## Menu Bar Status
 
 ![Waker Menu Bar Active](./docs/appearance/menu-bar-status.svg)
 
 ## Menu Body Appearance
+
 ![Waker Menu Body Appearance](./docs/appearance/menu-body-appearance.png)
 
 # Features
 
-- **Keep Mac Awake**: Keep your Mac and related Apps awake and prevent it from becoming "inactive".
-- **Set Wake Up Interval**: Set the interval to wake up your Mac.
-- **Schedule Running Time**: Set a specific time to run Waker.
-- **Auto-Start**: Automatically start Waker when you log in.
-- **Dark Mode Support**: Support both light and dark mode.
-- **Auto-Update**: Automatically check for updates and notify you when a new version is available.
+- **Keep Mac Awake**: Prevent your Mac and related apps from becoming inactive.
+- **Set Wake Up Interval**: Define the interval to wake up your Mac.
+- **Schedule Running Time**: Set specific times for Waker to run.
+- **Auto-Start**: Configure Waker to start automatically upon login.
+- **Dark Mode Support**: Seamlessly switch between light and dark modes.
+- **Auto-Update**: Automatically check for updates and notify you of new versions.
 
 # Installation
 
 > [!WARNING]
-> 1. As I don't have a paid Apple Developer account, this app is signed with a **development** certificate and not **notarized** by Apple.
-> 
->    Due to the macOS security policy ([Safely open apps on your Mac](https://support.apple.com/en-us/102445)), you may need to do some extra steps to install and open the app.
-> 
-> 2. You just need to do the above steps **once**. After that, you can open the app from the `Launchpad` <img src="./docs/assets/launchpad.jpg.webp" alt="launchpad icon" width="20px"> as usual.
->
->    The app can be updated automatically, but you will never see the above warning again unless you reinstall the app.
->
-> 3. If you have any concerns about the security of this app, you can:
+> 1. As I don't have a paid Apple Developer account, this app is signed with a **development** certificate and not **notarized** by Apple, see more at [Safely open apps on your Mac](https://support.apple.com/en-us/102445).
+> 2. You may encounter additional installation steps due to macOS security policies.
+> 3. Once installed, you can update the app automatically without encountering this warning again, unless you reinstall it.
+> 4. If you have any concerns about the security of this app, you can:
 >    - Check the source code and build the app by yourself.
->    - Use the Python version I developed: [Waker](https://github.com/ChenglongMa/waker). Their core functionality is the same, just the user interface is slightly different.
+>    - Use the Python version I developed: [Waker](https://github.com/ChenglongMa/waker). Their core functionality is
+       the same, just the user interface is slightly different.
 
 <details markdown="1">
   <summary><i>If you want to continue, click here...</i></summary>
 
 ## Download
 
-You can download the latest version of Waker `.dmg` installer from the [release page](https://github.com/ChenglongMa/waker-mac/releases/latest).
+Download the latest version of Waker's `.dmg` installer from
+the [release page](https://github.com/ChenglongMa/waker-mac/releases/latest).
 
 ## Installation Steps
 
-1. Please **right-click** the `.dmg` file and select `Open` to open the installer.
-    - 🔴 If you **double-click** the `.dmg` file, you may encounter the following warning:
-        ![double click warning](./docs/installation/double-click-dmg.png)
+1. **Right-click** the `.dmg` file and select `Open` to begin the installation process.
     - 🟢 When right-clicking the `.dmg` file, you will see the following warning, **please click `Open`**.
-        ![right click dmg](./docs/installation/right-click-dmg.png)
-2. Please **drag** the `Waker.app` to the `Applications` folder.
-    ![Drag to Applications](./docs/installation/dmg-installer.png)
-3. You will find the `Waker.app` in the `Launchpad` <img src="./docs/assets/launchpad.jpg.webp" alt="launchpad icon" width="20px"> or `Applications` folder.
-    - 🔴 If you open the app from `Launchpad` <img src="./docs/assets/launchpad.jpg.webp" alt="launchpad icon" width="20px">, you will see the following warning, **please click `Show in Finder`**.
-        ![warning in launchpad](./docs/installation/open-in-application.png)
-    - 🟢 Please **right-click** the app from the `Applications` folder and select `Open`, you will see the following warning, **Please click `Open`**.
-        ![warning in finder](./docs/installation/right-click-in-finder.png)
-4. Finally, you can find the app in the menu bar, as shown in [Appearance Section](#appearance).
-5. From now on, you can open the app from the `Launchpad` <img src="./docs/assets/launchpad.jpg.webp" alt="launchpad icon" width="20px"> as usual.
+      ![right click dmg](./docs/installation/right-click-dmg.png)
+    - 🔴 If you **double-click** the `.dmg` file, you may encounter the following warning:
+      ![double click warning](./docs/installation/double-click-dmg.png)
+2. Drag the `Waker.app` to your `Applications` folder.
+   ![Drag to Applications](./docs/installation/dmg-installer.png)
+3. Locate `Waker.app` in your `Launchpad` or `Applications` folder. If you encounter a warning when opening the app
+   from `Launchpad`, click `Show in Finder` and proceed.
+    - 🟢 Please **right-click** the app from the `Applications` folder and select `Open`, you will see the following
+      warning, **Please click `Open`**.
+      ![warning in finder](./docs/installation/right-click-in-finder.png)
+    - 🔴 If you open the app
+      from `Launchpad` <img src="./docs/assets/launchpad.jpg.webp" alt="launchpad icon" width="20px">, you will see the
+      following warning, **please click `Show in Finder`**.
+      ![warning in launchpad](./docs/installation/open-in-application.png)
+4. You can now find the app in the menu bar, as depicted in the [Appearance Section](#appearance).
+5. From now on, you can open the app
+   from `Launchpad` <img src="./docs/assets/launchpad.jpg.webp" alt="launchpad icon" width="20px"> as usual.
 
 </details>
 
 # Usage
 
-The usage of the app is very straightforward and basically as it appears in its interface.
-
-Here are some tips or reminders.
+Using Waker is intuitive, with its functionality directly accessible from its interface.
 
 ## Permissions
 
-When you first open the app, you may need to grant some permissions to the app.
+Upon initial launch, you may need to grant certain permissions to Waker:
 
-1. **Accessibility Permission** - You need to grant the app the **Accessibility** permission to enable the full functionality of the app.
-    - You can follow the instructions in the app to grant the permission.
-    - You can also do it manually following [this instruction](https://support.apple.com/en-au/guide/mac-help/mh43185/mac#:~:text=To%20review%20app%20permissions%20—%20for,any%20app%20in%20the%20list.).
-        - Open the **System Settings**.
-        - Go to **Privacy & Privacy**.
-        - In the **Privacy** section, you can find the **Accessibility** settings.
-        - You can toggle the switch to grant the permission to the app.
-        ![Accessibility Permission](./docs/usage/accessibility-permission.png)
-2. **Launch at Login** - You can enable the app to launch at login.
-   - You can enable it in the app menu bar settings.
-      1. Toggle the switch to enable the **Launch at Login**.
-      2. You will see a prompt like:
-        ![Launch at Login prompt](./docs/usage/launch-at-login-prompt.png)
-   - You can also do it manually following [this instruction](https://support.apple.com/en-au/guide/mac-help/mh15189/mac).
-       - Open the **System Settings**.
-       - Go to **General**.
-       - In the **Login Items** section, you can add the app to the list.
-       ![Launch at Login](./docs/usage/launch-at-login-settings.png)
-1. **Auto-Update** - You can enable the app to check for updates automatically.
-   - You may need to grant **Notification** permission to the app.
+1. **Accessibility Permission**: Grant the app this permission to enable its full functionality.
+    - You can follow the prompt when you first launch the app.
+    - Or, you can do this manually through System Settings > Privacy & Security > Accessibility. Refer
+      to [this instruction](https://support.apple.com/en-au/guide/mac-help/mh43185/mac#:~:text=To%20review%20app%20permissions%20—%20for,any%20app%20in%20the%20list.).
+      ![Accessibility Permission](./docs/usage/accessibility-permission.png)
+
+2. **Launch at Login**: Enable this feature to have Waker start automatically upon login.
+
+    - You can toggle this setting in the app's menu bar settings
+    - Or manually through System Settings > Users & Groups > Login Items.
+      ![Launch at Login](./docs/usage/launch-at-login-settings.png)
+
+3. **Auto-Update**: Grant the app **notification** permissions to receive automatic update notifications.
 
 ## Functionality
 
 ### Manual Running
 
-You can manually run the app by toggle the `Main Switch` in the app menu bar.
+Toggle the `Main Switch` in the app's menu bar to manually run or stop Waker.
 
 ### Set Wake Up Interval
 
-You can set the wake-up interval in the app menu bar settings.
-
-Some apps would become inactive after **5 minutes**. You can set the wake-up interval to prevent them from becoming inactive.
+Define the wake-up interval in the app's menu bar settings to prevent certain apps from becoming inactive.
 
 ### Schedule Running Time
 
-You can set a specific time to run the app.
+Set specific times for Waker to run, allowing for customized usage based on your preferences and workflow.
 
 For example, you can set the app to run at **9:00 AM** and close at **5:00 PM** from **Monday** to **Friday**.
 
 ### Auto-Update
 
-You can enable the app to check for updates automatically.
-
-When a new version is available, you will receive a notification to update the app.
+Enable automatic update checks to stay informed about the latest versions of Waker.
 
 You can also check for updates manually in the app menu bar settings.
 
@@ -152,5 +143,5 @@ You can also check for updates manually in the app menu bar settings.
    by [sponsoring the repository on GitHub](https://github.com/sponsors/ChenglongMa). Your contributions help us
    maintain and improve the project.
 
-Thank you for considering contributing to **Waker**. 
+Thank you for considering contributing to **Waker**.
 We value your input and look forward to collaborating with you!
