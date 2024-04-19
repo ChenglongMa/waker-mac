@@ -16,6 +16,7 @@ enum RunningStatus {
 
 struct Constants {
     static let ALL_WEEKDAYS = 0b1_111_111
+    static let ALL_WORKDAYS = 0b0_11111_0
     static let UPDATE_NOTIFICATION_IDENTIFIER = "UpdateCheck"
 }
 

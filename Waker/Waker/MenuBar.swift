@@ -18,8 +18,8 @@ struct MenuBar: View {
     
     @State private var isOn: Bool = true
     @AppStorage("lanunchAtLogin") private var launchAtLogin: Bool = false
-    @State private var everyday: Bool = true
-    @State private var selectedDays: Int = 0
+    @State private var everyday: Bool = false
+    @State private var selectedDays: Int = Constants.ALL_WORKDAYS
     
     @State private var wakeUpInterval: Double = 5.0
     @State private var scheduled: Bool = false
@@ -260,5 +260,5 @@ struct CustomToggleStyle: ToggleStyle {
 #Preview {
     MenuBar(appName: Binding.constant("Waker - active"),appIcon: Binding.constant("sun.max.fill"), updaterController: SPUStandardUpdaterController(startingUpdater: false, updaterDelegate: nil, userDriverDelegate: nil))
         .environmentObject(WakerViewModel())
-        .frame(width: 500)
+        .frame(width: 400, height: 500)
 }
