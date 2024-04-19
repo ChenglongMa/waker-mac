@@ -33,15 +33,17 @@ A simple macOS menu bar app that helps you to keep your Mac awake and prevent "_
 # Installation
 
 > [!WARNING]
-> As I don't have a paid Apple Developer account, this app is signed with a **development** certificate and not **notarized** by Apple.
+> 1. As I don't have a paid Apple Developer account, this app is signed with a **development** certificate and not **notarized** by Apple.
 > 
-> Due to the macOS security policy ([Safely open apps on your Mac](https://support.apple.com/en-us/102445)), you may need to do some extra steps to install and open the app.
+>    Due to the macOS security policy ([Safely open apps on your Mac](https://support.apple.com/en-us/102445)), you may need to do some extra steps to install and open the app.
 > 
-> You just need to do this once. After that, you can open the app as usual.
+> 2. You just need to do the above steps **once**. After that, you can open the app from the `Launchpad` <img src="./docs/assets/launchpad.jpg.webp" alt="launchpad icon" width="20px"> as usual.
 >
-> If you have any concerns about the security of this app, you can:
-> - Check the source code and build the app by yourself.
-> - Use the Python version I developed: [Waker](https://github.com/ChenglongMa/waker). Their core functionality is the same, just the user interface is slightly different.
+>    The app can be updated automatically, but you will never see the above warning again unless you reinstall the app.
+>
+> 3. If you have any concerns about the security of this app, you can:
+>    - Check the source code and build the app by yourself.
+>    - Use the Python version I developed: [Waker](https://github.com/ChenglongMa/waker). Their core functionality is the same, just the user interface is slightly different.
 
 <details markdown="1">
   <summary><i>If you want to continue, click here...</i></summary>
@@ -65,13 +67,7 @@ You can download the latest version of Waker `.dmg` installer from the [release 
     - 🟢 Please **right-click** the app from the `Applications` folder and select `Open`, you will see the following warning, **Please click `Open`**.
         ![warning in finder](./docs/installation/right-click-in-finder.png)
 4. Finally, you can find the app in the menu bar, as shown in [Appearance Section](#appearance).
-
-> [!NOTE]
-> You just need to do the above steps **once**. After that, you can open the app from the `Launchpad` <img src="./docs/assets/launchpad.jpg.webp" alt="launchpad icon" width="20px"> as usual.
->
-> The app can be updated automatically. When a new version is available, you will receive a notification to update the app.
->
-> But you will never see the above warning again unless you reinstall the app.
+5. From now on, you can open the app from the `Launchpad` <img src="./docs/assets/launchpad.jpg.webp" alt="launchpad icon" width="20px"> as usual.
 
 </details>
 
