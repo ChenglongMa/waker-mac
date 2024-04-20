@@ -90,6 +90,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 *.DS_Store
-
-scripts/
 *.pptx
+scripts/generate_appcast
