@@ -3,12 +3,24 @@
     <channel>
         <title>Waker</title>
         <item>
+            <title>1.1</title>
+            <pubDate>Sat, 20 Apr 2024 13:27:52 +1000</pubDate>
+            <link>https://github.com/ChenglongMa/waker-mac</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/ChenglongMa/waker-mac/releases/tag/1.1</sparkle:fullReleaseNotesLink>
+            <sparkle:version>1.1</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/ChenglongMa/waker-mac/releases/download/1.1/Waker.dmg" length="1073496" type="application/octet-stream" sparkle:edSignature="kEIUEghUTwzS8tcPr2jwyWoFNEUr9wOnzaPDRjwqnl0NlbPkUi8N5Nc4nhCYAC1VfWXpzKyXHbph9CfdOoHzBw=="/>
+        </item>
+        <item>
             <title>1.0</title>
             <pubDate>Thu, 18 Apr 2024 17:05:45 +1000</pubDate>
+            <link>https://github.com/ChenglongMa/waker-mac</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/ChenglongMa/waker-mac/releases/tag/1.0</sparkle:fullReleaseNotesLink>
             <sparkle:version>1.0</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/ChenglongMa/waker-mac/releases/latest/download/Waker.dmg" length="1075519" type="application/octet-stream" sparkle:edSignature="bbbFodjspKOUr1AsFnHRxfK5wxigYGmNc1ihhCIZShB+FfCZtbTbObNYJl7lIRlusQZiTvwvdd8fIpXlMX9jBg=="/>
+            <enclosure url="https://github.com/ChenglongMa/waker-mac/releases/download/1.0/Waker.dmg" length="1075519" type="application/octet-stream" sparkle:edSignature="bbbFodjspKOUr1AsFnHRxfK5wxigYGmNc1ihhCIZShB+FfCZtbTbObNYJl7lIRlusQZiTvwvdd8fIpXlMX9jBg=="/>
         </item>
     </channel>
 </rss>
