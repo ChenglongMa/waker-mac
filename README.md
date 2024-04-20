@@ -7,6 +7,7 @@
 ![Swift Version](https://img.shields.io/badge/Swift_Version-5-blue?logo=swift)
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ChenglongMa/waker-mac?include_prereleases)](https://github.com/ChenglongMa/waker-mac/releases/latest)
 [![GitHub License](https://img.shields.io/github/license/ChenglongMa/waker-mac)](https://github.com/ChenglongMa/waker-mac/blob/main/LICENSE)
+[![Downloads](https://img.shields.io/github/downloads/ChenglongMa/waker-mac/total)](https://github.com/ChenglongMa/waker-mac/releases/latest)
 
 > "_You deserve a cup of coffee!_" - Waker <img src="./docs/icon.svg" alt="Waker icon" width="50px">
 
