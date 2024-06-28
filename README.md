@@ -1,6 +1,5 @@
-<div style="text-align:center;">
+<div align="center">
     <img src="./docs/social-preview.png" alt="Waker social preview">
-</div>
 
 ![macOS Version](https://img.shields.io/badge/macOS_Version-13.0%2B-green?logo=macOS)
 ![App Category](https://img.shields.io/badge/App_Category-Utilities-blue?logo=apple)
@@ -8,6 +7,10 @@
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ChenglongMa/waker-mac?include_prereleases)](https://github.com/ChenglongMa/waker-mac/releases/latest)
 [![GitHub License](https://img.shields.io/github/license/ChenglongMa/waker-mac)](https://github.com/ChenglongMa/waker-mac/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/ChenglongMa/waker-mac/total)](https://github.com/ChenglongMa/waker-mac/releases/latest)
+
+    English | <a href="./README_CN.md">简体中文</a>
+    
+</div>
 
 > "_You deserve a cup of coffee!_" - Waker <img src="./docs/icon.svg" alt="Waker icon" width="50px">
 
