@@ -9,8 +9,10 @@
 [![GitHub许可证](https://img.shields.io/github/license/ChenglongMa/waker-mac)](https://github.com/ChenglongMa/waker-mac/blob/main/LICENSE)
 [![下载次数](https://img.shields.io/github/downloads/ChenglongMa/waker-mac/total)](https://github.com/ChenglongMa/waker-mac/releases/latest)
 
+</div>
+
+<div align="center">
     <a href="./README.md">English</a> | 简体中文
-    
 </div>
 
 > 

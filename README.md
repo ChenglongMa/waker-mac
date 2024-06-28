@@ -8,8 +8,10 @@
 [![GitHub License](https://img.shields.io/github/license/ChenglongMa/waker-mac)](https://github.com/ChenglongMa/waker-mac/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/ChenglongMa/waker-mac/total)](https://github.com/ChenglongMa/waker-mac/releases/latest)
 
+</div>
+
+<div align="center">
     English | <a href="./README_CN.md">简体中文</a>
-    
 </div>
 
 > "_You deserve a cup of coffee!_" - Waker <img src="./docs/icon.svg" alt="Waker icon" width="50px">
