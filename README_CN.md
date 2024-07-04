@@ -51,7 +51,7 @@ Waker是一个简单直接的macOS菜单栏应用，旨在保持你的Mac唤醒�
 >
 
 <details markdown="1">
-  <summary><i><b>如果没有疑虑，请单此继续。。。</b></i></summary>
+  <summary><i><b>如果没有疑虑，请单击此处继续。。。</b></i></summary>
 
 
 ## 下载
